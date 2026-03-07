@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lumière Beauty — Premium Beauty Parlour</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- ─── NAVBAR ─── -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-brand">
+      <span class="brand-icon">✦</span>
+      <span class="brand-name">Lumière Beauty</span>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#appointment">Book</a></li>
+      <li><a href="#testimonials">Reviews</a></li>
+    </ul>
+    <button class="nav-cta" onclick="document.getElementById('appointment').scrollIntoView({behavior:'smooth'})">
+      Book Now
+    </button>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ─── HERO ─── -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <img
+        src="https://lh3.googleusercontent.com/gps-cs-s/AHVAweol0IyQA5-c9UIE8_pYkK4qxfpGIPUvztrCI-fn0LoPA-irpkWC4BVDEM7TFX2RVaykVh_Hnm-a1SCpJS6JboTpEkYadS1vVz1wSoAW4e1HvH103L8scbnw3URkcfNgFREMT1Lj=s1360-w1360-h1020-rw"
+        alt="Lumière Beauty Parlour"
+        class="hero-img"
+      />
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-eyebrow reveal-up" style="animation-delay:.2s">Welcome to Lumière Beauty</p>
+      <h1 class="hero-title reveal-up" style="animation-delay:.5s">
+        Enhance Your<br /><em>Natural Beauty</em>
+      </h1>
+      <p class="hero-sub reveal-up" style="animation-delay:.8s">
+        Professional beauty treatments with elegance and care.
+      </p>
+      <div class="hero-btns reveal-up" style="animation-delay:1.1s">
+        <button class="btn btn-primary" onclick="document.getElementById('appointment').scrollIntoView({behavior:'smooth'})">
+          <i class="fa-regular fa-calendar"></i> Book Appointment
+        </button>
+        <button class="btn btn-ghost" onclick="document.getElementById('services').scrollIntoView({behavior:'smooth'})">
+          View Services <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ─── MARQUEE RIBBON ─── -->
+  <div class="ribbon">
+    <div class="ribbon-track">
+      <span>Bridal Makeup</span><span class="dot">✦</span>
+      <span>Skin Care</span><span class="dot">✦</span>
+      <span>Hair Styling</span><span class="dot">✦</span>
+      <span>Facial Treatments</span><span class="dot">✦</span>
+      <span>Manicure & Pedicure</span><span class="dot">✦</span>
+      <span>Party Looks</span><span class="dot">✦</span>
+      <span>Bridal Makeup</span><span class="dot">✦</span>
+      <span>Skin Care</span><span class="dot">✦</span>
+      <span>Hair Styling</span><span class="dot">✦</span>
+      <span>Facial Treatments</span><span class="dot">✦</span>
+      <span>Manicure & Pedicure</span><span class="dot">✦</span>
+      <span>Party Looks</span><span class="dot">✦</span>
+    </div>
+  </div>
+
+  <!-- ─── ABOUT ─── -->
+  <section class="about section-pad" id="about">
+    <div class="container about-grid">
+      <div class="about-img-wrap scroll-reveal">
+        <img
+          src="https://lh3.googleusercontent.com/p/AF1QipN1tCZYuQUSc7WU8-FJdozGuAxg_Qr5VCCca-HQ=s1360-w1360-h1020-rw"
+          alt="Lumière Beauty Studio"
+          class="about-img"
+        />
+        <div class="about-badge">
+          <span class="badge-num">12+</span>
+          <span class="badge-label">Years of Excellence</span>
+        </div>
+      </div>
+      <div class="about-text scroll-reveal">
+        <p class="section-eyebrow">Our Story</p>
+        <h2 class="section-title">A Modern Studio<br /><em>Built for You</em></h2>
+        <p class="about-desc">
+          At Lumière Beauty, we believe every woman deserves to feel extraordinary. Our luxurious studio
+          blends cutting-edge techniques with timeless artistry — creating an experience as beautiful as
+          the results.
+        </p>
+        <p class="about-desc">
+          From intimate bridal preparations to everyday radiance, our expert team is dedicated to
+          celebrating your unique beauty with personalised care and premium products.
+        </p>
+        <div class="about-stats">
+          <div class="stat"><span class="stat-n">5k+</span><span class="stat-l">Happy Clients</span></div>
+          <div class="stat"><span class="stat-n">30+</span><span class="stat-l">Expert Artists</span></div>
+          <div class="stat"><span class="stat-n">98%</span><span class="stat-l">Satisfaction</span></div>
+        </div>
+        <a href="#appointment" class="btn btn-primary" style="display:inline-flex;margin-top:2rem">
+          Discover More <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── SERVICES ─── -->
+  <section class="services section-pad" id="services">
+    <div class="container">
+      <div class="section-header scroll-reveal">
+        <p class="section-eyebrow">What We Offer</p>
+        <h2 class="section-title">Our Signature<br /><em>Services</em></h2>
+      </div>
+      <div class="services-grid">
+
+        <div class="service-card scroll-reveal" style="--delay:0s">
+          <div class="service-icon-wrap">
+            <i class="fa-solid fa-spa"></i>
+          </div>
+          <h3>Facial Treatment</h3>
+          <p>Deep cleansing, hydrating, and rejuvenating facials tailored to your skin type.</p>
+          <a href="#appointment" class="service-link">Book Now <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+
+        <div class="service-card scroll-reveal" style="--delay:.1s">
+          <div class="service-icon-wrap">
+            <i class="fa-solid fa-heart"></i>
+          </div>
+          <h3>Bridal Makeup</h3>
+          <p>Timeless bridal looks crafted to make your most important day unforgettable.</p>
+          <a href="#appointment" class="service-link">Book Now <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+
+        <div class="service-card scroll-reveal" style="--delay:.2s">
+          <div class="service-icon-wrap">
+            <i class="fa-solid fa-scissors"></i>
+          </div>
+          <h3>Hair Styling</h3>
+          <p>Expert cuts, colours, and styles to transform and enhance your natural hair.</p>
+          <a href="#appointment" class="service-link">Book Now <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+
+        <div class="service-card scroll-reveal" style="--delay:.3s">
+          <div class="service-icon-wrap">
+            <i class="fa-solid fa-hand-sparkles"></i>
+          </div>
+          <h3>Manicure &amp; Pedicure</h3>
+          <p>Luxurious nail treatments that leave your hands and feet looking flawless.</p>
+          <a href="#appointment" class="service-link">Book Now <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+
+        <div class="service-card scroll-reveal" style="--delay:.4s">
+          <div class="service-icon-wrap">
+            <i class="fa-solid fa-droplet"></i>
+          </div>
+          <h3>Skin Care</h3>
+          <p>Advanced skin care rituals using premium products for a radiant, youthful glow.</p>
+          <a href="#appointment" class="service-link">Book Now <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+
+        <div class="service-card scroll-reveal" style="--delay:.5s">
+          <div class="service-icon-wrap">
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <h3>Party Makeup</h3>
+          <p>Glamorous, long-lasting party looks that let you shine all night long.</p>
+          <a href="#appointment" class="service-link">Book Now <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── GALLERY ─── -->
+  <section class="gallery section-pad" id="gallery">
+    <div class="container">
+      <div class="section-header scroll-reveal">
+        <p class="section-eyebrow">Our Portfolio</p>
+        <h2 class="section-title">Beauty in<br /><em>Every Frame</em></h2>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item large scroll-reveal">
+          <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=800&q=80" alt="Bridal Makeup" />
+          <div class="gallery-overlay"><span>Bridal Elegance</span></div>
+        </div>
+        <div class="gallery-item scroll-reveal">
+          <img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=600&q=80" alt="Facial" />
+          <div class="gallery-overlay"><span>Glow Facial</span></div>
+        </div>
+        <div class="gallery-item scroll-reveal">
+          <img src="https://images.unsplash.com/photo-1560869713-7d0a29430803?w=600&q=80" alt="Hair Styling" />
+          <div class="gallery-overlay"><span>Hair Artistry</span></div>
+        </div>
+        <div class="gallery-item scroll-reveal">
+          <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?w=600&q=80" alt="Nail Art" />
+          <div class="gallery-overlay"><span>Nail Art</span></div>
+        </div>
+        <div class="gallery-item scroll-reveal">
+          <img src="https://images.unsplash.com/photo-1519415943484-9fa1873496d4?w=600&q=80" alt="Skin Care" />
+          <div class="gallery-overlay"><span>Skin Care</span></div>
+        </div>
+        <div class="gallery-item tall scroll-reveal">
+          <img src="https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=600&q=80" alt="Party Makeup" />
+          <div class="gallery-overlay"><span>Party Glam</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── APPOINTMENT ─── -->
+  <section class="appointment section-pad" id="appointment">
+    <div class="container appt-container">
+      <div class="appt-left scroll-reveal">
+        <p class="section-eyebrow light">Reserve Your Spot</p>
+        <h2 class="section-title light">Book Your<br /><em>Appointment</em></h2>
+        <p class="appt-desc">
+          Experience the Lumière difference. Fill in the form and our team will confirm your
+          session within 24 hours.
+        </p>
+        <div class="appt-contact">
+          <div class="contact-item"><i class="fa-solid fa-phone"></i><span>+91 98765 43210</span></div>
+          <div class="contact-item"><i class="fa-solid fa-envelope"></i><span>hello@lumierebeauty.com</span></div>
+          <div class="contact-item"><i class="fa-solid fa-location-dot"></i><span>42 Rose Avenue, Mumbai, India</span></div>
+        </div>
+      </div>
+      <div class="appt-form-wrap scroll-reveal">
+        <form class="appt-form" id="bookingForm" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" required />
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="+91 00000 00000" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="service">Select Service</label>
+            <select id="service" name="service" required>
+              <option value="" disabled selected>Choose a service...</option>
+              <option>Facial Treatment</option>
+              <option>Bridal Makeup</option>
+              <option>Hair Styling</option>
+              <option>Manicure &amp; Pedicure</option>
+              <option>Skin Care</option>
+              <option>Party Makeup</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="date">Preferred Date</label>
+            <input type="date" id="date" name="date" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Additional Notes</label>
+            <textarea id="message" name="message" rows="4" placeholder="Any special requests or allergies..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">
+            <i class="fa-regular fa-calendar-check"></i> Confirm Booking
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── TESTIMONIALS ─── -->
+  <section class="testimonials section-pad" id="testimonials">
+    <div class="container">
+      <div class="section-header scroll-reveal">
+        <p class="section-eyebrow">Client Love</p>
+        <h2 class="section-title">What Our Clients<br /><em>Are Saying</em></h2>
+      </div>
+      <div class="testi-grid">
+
+        <div class="testi-card scroll-reveal" style="--delay:0s">
+          <div class="testi-quote"><i class="fa-solid fa-quote-left"></i></div>
+          <p class="testi-text">
+            "Lumière transformed me completely for my wedding day. The bridal makeup was
+            absolutely flawless — I've never felt more beautiful in my life."
+          </p>
+          <div class="testi-footer">
+            <div class="testi-avatar">P</div>
+            <div>
+              <span class="testi-name">Priya Mehta</span>
+              <div class="stars">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testi-card scroll-reveal" style="--delay:.15s">
+          <div class="testi-quote"><i class="fa-solid fa-quote-left"></i></div>
+          <p class="testi-text">
+            "The facial treatment here is like no other. My skin is glowing and the
+            experience was so relaxing. I come here every month — it's my self-care ritual."
+          </p>
+          <div class="testi-footer">
+            <div class="testi-avatar">S</div>
+            <div>
+              <span class="testi-name">Sneha Rao</span>
+              <div class="stars">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testi-card scroll-reveal" style="--delay:.3s">
+          <div class="testi-quote"><i class="fa-solid fa-quote-left"></i></div>
+          <p class="testi-text">
+            "From the warm welcome to the stunning results — every detail at Lumière speaks
+            luxury. My hair styling turned heads at the party. Simply magnificent!"
+          </p>
+          <div class="testi-footer">
+            <div class="testi-avatar">A</div>
+            <div>
+              <span class="testi-name">Ananya Kapoor</span>
+              <div class="stars">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FOOTER ─── -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <div class="nav-brand" style="margin-bottom:1rem">
+            <span class="brand-icon">✦</span>
+            <span class="brand-name">Lumière Beauty</span>
+          </div>
+          <p class="footer-tagline">Where elegance meets artistry. Every visit, a masterpiece.</p>
+          <div class="social-icons">
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+            <a href="#" aria-label="Youtube"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#appointment">Book Now</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#services">Facial Treatments</a></li>
+            <li><a href="#services">Bridal Makeup</a></li>
+            <li><a href="#services">Hair Styling</a></li>
+            <li><a href="#services">Manicure &amp; Pedicure</a></li>
+            <li><a href="#services">Skin Care</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact Us</h4>
+          <ul class="contact-list">
+            <li><i class="fa-solid fa-location-dot"></i> 42 Rose Avenue, Bandra West, Mumbai 400050</li>
+            <li><i class="fa-solid fa-phone"></i> +91 98765 43210</li>
+            <li><i class="fa-solid fa-envelope"></i> hello@lumierebeauty.com</li>
+            <li><i class="fa-regular fa-clock"></i> Mon – Sat: 9am – 8pm</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>© 2025 Lumière Beauty. All rights reserved. Crafted with <i class="fa-solid fa-heart" style="color:var(--rose)"></i> in Mumbai.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ─── BOOKING POPUP ─── -->
+  <div class="popup-overlay" id="popupOverlay">
+    <div class="popup-card">
+      <div class="popup-icon"><i class="fa-solid fa-circle-check"></i></div>
+      <h3>Appointment Confirmed!</h3>
+      <p>Thank you for booking with <strong>Lumière Beauty</strong>. We'll call you within 24 hours to confirm your session. ✨</p>
+      <button class="btn btn-primary" onclick="closePopup()">Close</button>
+    </div>
+  </div>
+
+  <!-- ─── BACK TO TOP ─── -->
+  <button class="back-top" id="backTop" aria-label="Back to top">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
